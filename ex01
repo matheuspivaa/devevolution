@@ -1,0 +1,37 @@
+<?php
+class Pessoa {
+    public $nome;
+    public $idade;
+    public $sexo;
+    public $emprego;
+    public $cidade;
+}
+
+$pessoa1 = new Pessoa();
+$pessoa1->nome = "Juliane";
+$pessoa1->idade = 30;
+$pessoa1->sexo = "Feminino";
+$pessoa1->emprego = "medica";
+$pessoa1->cidade = "Chapeco"; 
+
+$pessoa2 = new Pessoa();
+$pessoa2->nome = "Lucas";
+$pessoa2->idade = 20;
+$pessoa2->sexo = "Masculino";
+$pessoa2->emprego = "policial";
+$pessoa2->cidade = "Joacaba"; 
+
+echo "Informações da pessoa 1: \n";
+echo "Nome: " . $pessoa1->nome . "\n";
+echo "Idade: " . $pessoa1->idade . "\n";
+echo "Sexo: " . $pessoa1->sexo . "\n";
+echo "Emprego: " . $pessoa1->emprego . "\n";
+echo "Cidade: " . $pessoa1->cidade . "\n" . "\n";
+
+echo "Informações da pessoa 2: \n";
+echo "Nome: " . $pessoa2->nome . "\n";
+echo "Idade: " . $pessoa2->idade . "\n";
+echo "Sexo: " . $pessoa2->sexo . "\n";
+echo "Emprego: " . $pessoa2->emprego . "\n";
+echo "Cidade: " . $pessoa2->cidade . "\n";
+?>

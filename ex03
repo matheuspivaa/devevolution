@@ -1,0 +1,25 @@
+<?php
+class Pessoa {
+    public $nome;
+    public $idade;
+    public $sexo;
+}
+
+class Funcionario extends Pessoa {
+    public $cargo;
+    public $salario;
+}
+
+$funcionario1 = new Funcionario();
+$funcionario1->nome = "Cleber";
+$funcionario1->idade = 35;
+$funcionario1->sexo = "Masculino";
+$funcionario1->cargo = "Gerente Comercial";
+$funcionario1->salario = 15000;
+
+echo "Informações do funcionário 1: \n";
+echo "Nome: " . $funcionario1->nome . "\n";
+echo "Idade: " . $funcionario1->idade . "\n";
+echo "Sexo: " . $funcionario1->sexo . "\n";
+echo "Cargo: " . $funcionario1->cargo . "\n";
+echo "Salário: R$" . $funcionario1->salario . "\n";
