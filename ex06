@@ -1,0 +1,23 @@
+<?php
+abstract class Animal {
+    abstract public function fazerbarulho();
+}
+
+class Cachorro extends Animal {
+    public function fazerbarulho() {
+        echo "Au au!";
+    }
+}
+
+class Gato extends Animal {
+    public function fazerbarulho() {
+        echo "Miau!";
+    }
+}
+
+$cachorro = new Cachorro();
+$cachorro->fazerbarulho();
+
+$gato = new Gato();
+$gato->fazerbarulho();
+?>
